@@ -1,0 +1,122 @@
+﻿body {
+    background: white;
+    margin: 0;
+    font-family: Arial;
+}
+
+body > div {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+body > div > header, nav, main, footer {
+    border-radius: 7px;
+    margin: 5px;
+    padding: 20px;
+    box-shadow: 1px 1px 1px #778899;
+}
+
+body > div > header {
+    order: 1;
+    flex: 0 1 100%;
+    height: 100px;
+    display: flex;
+}
+
+body > div > nav {
+    order: 2;
+    flex: 0 1 100%;
+    display: flex;
+    background: #ABD2CC;
+    height: 15px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+body > div > nav > input {
+    background-image: url("../search.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 5px;
+    height: 20px;
+}
+
+body > div > nav > input:hover {
+    background-image: none;
+}
+
+
+body > div > main {
+    order: 3;
+    flex: 1;
+    display: flex;
+    min-height: 300px;
+    background-color: #FFF8DC;
+    margin-top: 0;
+}
+
+div #content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+} 
+
+div #content > details {
+    display: flex;
+    background: white;
+    flex-flow: row wrap;
+    border-radius: 7px;
+    padding: 5px;
+    min-width: 400px;
+    margin: 5px;
+}
+
+div #content > details > summary::-webkit-details-marker {
+    display: none;
+} 
+
+@media screen and (max-width: 768px) {
+    body > div > main {
+        min-width: 200px;
+    }
+
+    div #content > details {
+        min-width: 150px;
+    }
+
+    div > nav {
+        min-width: 200px;
+    }
+
+}
+
+body > div > footer {
+    order: 4;
+    flex: 0 1 100%;
+    height: 200px;
+    display: flex;
+}
+
+
+form {
+    display: flex;
+    align-content: center;
+    flex-flow: column nowrap;
+    height: 150px;
+    font-size: 15px;
+}
+
+form > span {
+    margin:2px;
+}
+
+button {
+    height: 20px;
+    border-radius: 5px;
+}
+
+
+
